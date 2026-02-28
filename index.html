@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Marketing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f9ff;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .images img {
+            width: 30%;
+            margin: 1%;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Marketing</h1>
+    <p>Promote your business digitally</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <div class="box">
+        <h2>What is Online Marketing?</h2>
+        <p>
+            Online marketing is the promotion of products and services through the internet.
+            It includes social media marketing, email marketing, SEO, and online advertising.
+        </p>
+        <button onclick="showMessage()">Click to Learn More</button>
+    </div>
+
+    <div class="box">
+        <h2>Types of Online Marketing</h2>
+        <ul>
+            <li>Social Media Marketing</li>
+            <li>Email Marketing</li>
+            <li>SEO (Search Engine Optimization)</li>
+            <li>Content Marketing</li>
+            <li>PPC Advertising</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Benefits</h2>
+        <ul>
+            <li>Global reach</li>
+            <li>Low cost</li>
+            <li>24/7 promotion</li>
+            <li>Easy to measure results</li>
+            <li>Brand awareness</li>
+        </ul>
+    </div>
+
+    <div class="box images">
+        <h2>Online Marketing Images</h2>
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="marketing">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="social media">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="digital marketing">
+    </div>
+
+    <div class="box">
+        <h2>Contact Us</h2>
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Online Marketing Website | Student Project</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Online marketing helps businesses reach more customers easily!");
+    }
+
+    function submitForm(event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been sent successfully.");
+    }
+</script>
+
+</body>
+</html>
